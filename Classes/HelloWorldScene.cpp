@@ -25,6 +25,10 @@ bool HelloWorld::init()
         return false;
     }
 
+    //preload leefy
+    auto cache = SpriteFrameCache::getInstance();
+    cache->addSpriteFramesWithFile("leefy.plist");
+
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
@@ -56,41 +60,10 @@ bool HelloWorld::init()
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
 
-    /////////////////////////////
-    // 3. add your codes below...
 
-    // add a label shows "Hello World"
-    // create and initialize a label
+    //add leefy
+    this->addLeefy();
 
-    auto label = Label::createWithTTF("Hello World", "fonts/Marker Felt.ttf", 24);
-    if (label == nullptr)
-    {
-        problemLoading("'fonts/Marker Felt.ttf'");
-    }
-    else
-    {
-        // position the label on the center of the screen
-        label->setPosition(Vec2(origin.x + visibleSize.width/2,
-                                origin.y + visibleSize.height - label->getContentSize().height));
-
-        // add the label as a child to this layer
-        this->addChild(label, 1);
-    }
-
-    // add "HelloWorld" splash screen"
-    auto sprite = Sprite::create("HelloWorld.png");
-    if (sprite == nullptr)
-    {
-        problemLoading("'HelloWorld.png'");
-    }
-    else
-    {
-        // position the sprite on the center of the screen
-        sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
-
-        // add the sprite as a child to this layer
-        this->addChild(sprite, 0);
-    }
     return true;
 }
 
@@ -111,3 +84,26 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
 
 
 }
+
+
+
+
+void HelloWorld::addLeefy()
+{
+    this->_leefySprite = LeefySprite::create();
+
+    if (_leefySprite == nullptr)
+    {
+        problemLoading("'Leefy'");
+    }
+    else
+    {
+
+        // add the sprite as a child to this layer
+        this->addChild(_leefySprite, 3);    
+        
+        //test talking
+        this->_leefySprite->talk();
+    }    
+}
+ 

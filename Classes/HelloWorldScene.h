@@ -15,6 +15,9 @@ public:
     
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
+    
+    //add leefy
+    void addLeefy();    
 };
 
 #endif // __HELLOWORLD_SCENE_H__
