@@ -130,6 +130,11 @@ void HelloWorld::addTouch()
     _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);        
 }
 
+void HelloWorld::addHUD()
+{ 
+
+}
+
 bool HelloWorld::onTouchBegan(Touch* touch, Event* event)
 {       
     this->touchDown = true;
@@ -170,8 +175,15 @@ void HelloWorld::onTouchCancelled(Touch* touch, Event* event)
 void HelloWorld::update(float delta)
 { 
     this->updateLeefy(delta);
+    this->updateCamera(delta);
 }
  
+void HelloWorld::updateHUD(float delta)
+{
+
+          
+} 
+
 
 //todo move to leefy class
 /**
@@ -192,3 +204,13 @@ void HelloWorld::updateLeefy(float delta)
     position.y -= LEEFY_FALL_SPEED * delta;
     this->_leefySprite->setPosition(position);  
 }
+
+void HelloWorld::updateCamera(float delta)
+{
+    auto camera = this->getDefaultCamera();
+    auto pos = camera->getPosition3D();
+//camera->setPosition3D(Vec3(pos.x, pos.y - delta * LEEFY_FALL_SPEED, pos.z));
+
+    camera->setPositionY(camera->getPositionY() - delta * LEEFY_FALL_SPEED);    
+}
+ 
