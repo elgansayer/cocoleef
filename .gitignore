@@ -21,3 +21,9 @@ proj.android/libraries/*/bin/*
 proj.android/libraries/*/.idea/*
 proj.android/libraries/*/*.iml
 proj.android/libraries/*/local.properties
+
+
+linux-build/bin/
+linux-build/cocos2d/
+linux-build/lib/
+bin
