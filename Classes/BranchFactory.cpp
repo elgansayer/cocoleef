@@ -159,7 +159,7 @@ bool BranchFactory::checkCollisions(Node * node)
             this->Branches.eraseObject(branchIt);
 
             //delete this sprite
-            branchIt->removeFromParentAndCleanup(true);
+            //branchIt->removeFromParentAndCleanup(true);
 
             //return true to update score
             return true;
