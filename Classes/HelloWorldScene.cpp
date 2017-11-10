@@ -1,6 +1,7 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
 #include "Leefy.h"
+#include "Local.h"
 
 USING_NS_CC;
 
@@ -65,6 +66,9 @@ bool HelloWorld::init()
     //add leefy
     this->addLeefy();
 
+    //schedule an update 'run update()'
+    this->scheduleUpdate();
+    
     return true;
 }
 
@@ -107,4 +111,33 @@ void HelloWorld::addLeefy()
         this->_leefySprite->talk();
     }    
 }
+
+
+/**
+    Update every frame 
+*/
+void HelloWorld::update(float delta)
+{ 
+    this->updateLeefy(delta);
+}
  
+
+//todo move to leefy class
+/**
+    Update leefy position each frame 
+*/
+void HelloWorld::updateLeefy(float delta)
+{ 
+    auto position = this->_leefySprite->getPosition();
+    float y = position.y;
+ 
+    //if we are touching
+    if(touchDown)
+    {
+        auto directionNormalized = (position.x - this->lastTouch.x);
+        position.x -= directionNormalized * LEEFY_MOVE_SPEED * delta;        
+    }
+ 
+    position.y -= LEEFY_FALL_SPEED * delta;
+    this->_leefySprite->setPosition(position);  
+}
