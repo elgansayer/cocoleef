@@ -3,6 +3,9 @@
 
 #include "cocos2d.h"
 #include "Leefy.h"
+#include "HUD.h"
+#include "CoinFactory.h"
+#include "BranchFactory.h"
 
 class HelloWorld : public cocos2d::Scene
 {
@@ -14,47 +17,42 @@ public:
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
     
+    //add leefy
+    void addLeefy();
+    void addBackground();
 
     //override and run updates each frame
-    void update(float) override;    
-
+    void update(float) override; 
 
     virtual bool onTouchBegan(cocos2d::Touch*, cocos2d::Event*);
     virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
     virtual void onTouchMoved(cocos2d::Touch*, cocos2d::Event*);
     virtual void onTouchCancelled(cocos2d::Touch*, cocos2d::Event*);
-    
-    
+
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
-    
-private:    
-    //add leefy
-    void addLeefy();   
 
+private:
     //add touch to schene
     void addTouch();
     
     //add hud to schene  
     void addHUD();
-    
-    //Update each frame
-    void updateLeefy(float delta);     
-    
+
     //Update each function each frame
     void updateHUD(float delta);
-    
-    //Update each frame
-    void updateCamera(float delta);        
+    void updateLeefy(float delta);
+    void updateCamera(float delta);    
 private:
-    //pointer to the main character 
-    LeefySprite * _leefySprite;
+    CoinFactory * _CoinFactory;
+    BranchFactory * _BranchFactory;
+
+    HUDLayer * HUD; 
+    LeefySprite *_leefySprite;
+    cocos2d::Sprite * _backgroundSprite; 
     
-    HUDLayer * HUD;     
-    //
     cocos2d::Vec2 lastTouch;
-    bool touchDown;    
-    
+    bool touchDown;
 };
 
 #endif // __HELLOWORLD_SCENE_H__
