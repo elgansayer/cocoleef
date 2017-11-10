@@ -158,12 +158,22 @@ set(GAME_SRC
         ${PLATFORM_SPECIFIC_SRC}
         Classes/AppDelegate.cpp
         Classes/HelloWorldScene.cpp
+        Classes/Leefy.cpp
+        Classes/CoinFactory.cpp
+        Classes/BranchFactory.cpp
+        Classes/HUD.cpp
+        
         )
 
 set(GAME_HEADERS
         ${PLATFORM_SPECIFIC_HEADERS}
-        Classes/AppDelegate.h
+        Classes/AppDelegate.h        
         Classes/HelloWorldScene.h
+        Classes/Leefy.h
+        Classes/BranchFactory.h
+        Classes/CoinFactory.h
+        Classes/Local.h
+        Classes/HUD.h
         )
 
 # add the executable
