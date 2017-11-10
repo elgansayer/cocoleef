@@ -1,5 +1,7 @@
 # Hopster Mobile developer interview task #
 
+Collect the coins as the leef falls from the tree, avoid the branches on the way down to the ground.
+
 Master is main builds, and still at original task cocos2d version.
 
 Dev is upgraded to 3.16 to let faster dev on my linux machine.
