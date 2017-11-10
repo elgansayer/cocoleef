@@ -58,12 +58,40 @@ bool CoinFactory::canGenetateCoin(float y)
     return (distance >= dist); 
 }
 
-
+//todo make one single check between all functions to check if coin collides with rect
 
 //todo
 //should put this in an update schedule
 void CoinFactory::deleteOldCoins()
 { 
+
+    CCScene *scene = CCDirector::sharedDirector()->getRunningScene();    
+    HelloWorld* gameScene = dynamic_cast<HelloWorld*>(scene);    
+    if(gameScene == NULL)
+    {
+        return;            
+    }
+
+    auto camera = gameScene->getDefaultCamera();  
+    auto position = camera->getPosition();
+    auto visibleSize = Director::getInstance()->getVisibleSize(); 
+
+    float maxY = position.y + ( (visibleSize.height / 2) - 10) ;
+
+    //  loop through bullets
+    for (auto coinIt: this->Coins)
+    {
+        //if (!coinRect.intersectsRect(nodeRect))
+
+        if( coinIt->getPositionY() > maxY )
+        {
+            //delete this object
+            this->Coins.eraseObject(coinIt);
+
+            //delete this sprite
+            coinIt->removeFromParentAndCleanup(true);
+        }
+    }
 }
 
 /**
@@ -72,13 +100,15 @@ void CoinFactory::deleteOldCoins()
  **/
 bool CoinFactory::checkCollisions(Node * node)
 {
+    //delete cant see coins
+    this->deleteOldCoins();
+
     auto nodeRect = CCRectMake(
     node->getPosition().x - (node->getContentSize().width/2),
     node->getPosition().y - (node->getContentSize().height/2),
     node->getContentSize().width,
     node->getContentSize().height);
-    
-  
+     
     //  loop through bullets
     for (auto coinIt: this->Coins)
     {
