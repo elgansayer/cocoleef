@@ -1,5 +1,6 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
+#include "Leefy.h"
 
 USING_NS_CC;
 
