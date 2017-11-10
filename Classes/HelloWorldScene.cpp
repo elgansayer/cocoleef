@@ -245,23 +245,45 @@ void HelloWorld::updateLeefy(float delta)
 void HelloWorld::updateCamera(float delta)
 {
     auto camera = this->getDefaultCamera();
-    auto pos = camera->getPosition3D();
+auto pos = camera->getPosition3D();
 //camera->setPosition3D(Vec3(pos.x, pos.y - delta * LEEFY_FALL_SPEED, pos.z));
 
-    camera->setPositionY(camera->getPositionY() - delta * LEEFY_FALL_SPEED);
+    camera->setPositionY(camera->getPositionY() - delta * LEEFY_FALL_SPEED);    
 }
  
 
 
+ 
+bool HelloWorld::onTouchBegan(Touch* touch, Event* event)
+{       
+    this->touchDown = true;
+    this->lastTouch = touch->getLocation();
+    
+    return true;
+}
 
+void HelloWorld::onTouchEnded(Touch* touch, Event* event)
+{
+    this->touchDown = false;
+    //todo smooth out
+    this->_leefySprite->setRotation(0); 
+}
 
+void HelloWorld::onTouchMoved(Touch* touch, Event* event)
+{
+    this->lastTouch = touch->getLocation();    
+    this->touchDown = true;
+ 
+    //not quite working right, 
+    //todo revisit
+    float angle = atan2(touch->getLocation().y - this->_leefySprite->getPosition().y, touch->getLocation().x - this->_leefySprite->getPosition().x );
+    angle = angle * (180/M_PI);   
+    //todo limit angle!
+    //cocos2d::log(" Angle: '%d'", angle);
+    this->_leefySprite->setRotation((270 + angle ));  
+}
 
-
-
-
-
-
-
-
-
-
+void HelloWorld::onTouchCancelled(Touch* touch, Event* event)
+{
+    this->touchDown = false;
+}
