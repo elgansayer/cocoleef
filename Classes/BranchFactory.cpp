@@ -3,33 +3,7 @@
 #include "Local.h"
 
 USING_NS_CC;
-  
-/*
-void BranchFactory::genetateBranch()
-{ 
-    CCScene *scene = CCDirector::sharedDirector()->getRunningScene();    
-    HelloWorld* gameScene = dynamic_cast<HelloWorld*>(scene);    
-    if(gameScene != NULL)
-    {
-        auto camera = gameScene->getDefaultCamera();  
-        auto position = camera->getPosition();
-        auto visibleSize = Director::getInstance()->getVisibleSize();
- 
-        float y = position.y - (visibleSize.height / 2);
-
-        auto branch = Sprite::create("Branch1.png");
-
-        this->Branches.pushBack(branch); 
-        branch->setPosition(ccp(50, y));
-
-        scene->addChild(branch, 5);
-    }
-
-
-}
-*/
-
-
+   
 void BranchFactory::genetateBranch()
 { 
 
@@ -61,9 +35,7 @@ void BranchFactory::genetateBranch()
         }
 
         this->Branches.pushBack(branch); 
-
-        int x = RandomHelper::random_int(10, int(visibleSize.width) - 10);
- 
+        int x = RandomHelper::random_int(10, int(visibleSize.width) - 10); 
         branch->setPosition(ccp(x, y));
 
         //todo struct const these or something
@@ -89,9 +61,7 @@ bool BranchFactory::canGenetateBranch(float y)
     }
      
     float distance = branch->getPosition().y - y;
-
-    float dist = (float)RandomHelper::random_int(DISTANCE_BETWEEN_BRANCHES_MIN, DISTANCE_BETWEEN_BRANCHES_MAX);
- 
+    float dist = (float)RandomHelper::random_int(DISTANCE_BETWEEN_BRANCHES_MIN, DISTANCE_BETWEEN_BRANCHES_MAX); 
     return (distance >= dist); 
 }
 
@@ -100,8 +70,7 @@ bool BranchFactory::canGenetateBranch(float y)
 //todo
 //should put this in an update schedule
 void BranchFactory::deleteOldBranches()
-{ 
-
+{  
     CCScene *scene = CCDirector::sharedDirector()->getRunningScene();    
     HelloWorld* gameScene = dynamic_cast<HelloWorld*>(scene);    
     if(gameScene == NULL)

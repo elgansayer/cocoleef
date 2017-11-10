@@ -19,7 +19,10 @@ LeefySprite* LeefySprite::create()
 
         //add animations
         pSprite->initAnims();
-
+ 
+        //make him happy enough
+        pSprite->happy();
+        
         return pSprite;
     }
 
@@ -37,20 +40,42 @@ void LeefySprite::initLeefy()
     float y = (visibleSize.height/2 + origin.y);    
     y += (this->getBoundingBox().size.height / 2);
     this->setPosition(Vec2(visibleSize.width/2 + origin.x, y));
- 
+
 }
 
 void LeefySprite::initAnims()
 {
-    // add talking anim
+    
     auto cache = SpriteFrameCache::getInstance();
+
+    // add talking anim
     this->leefyTalk.pushBack(cache->getSpriteFrameByName("Leefy-Happy.png"));
     this->leefyTalk.pushBack(cache->getSpriteFrameByName("Leefy-Smile.png"));        
+
+    // add bump anim 
+    this->leefyBump.pushBack(cache->getSpriteFrameByName("Leefy-Bump.png"));    
+
+    this->leefyHappy.pushBack(cache->getSpriteFrameByName("Leefy-Happy.png"));    
+    
 }
  
+void LeefySprite::happy()
+{
+    Animation* anim = new Animation;
+    anim->initWithSpriteFrames(this->leefyHappy, 1.0f);
+    this->runAction(RepeatForever::create(Animate::create(anim)));                    
+}
+
 void LeefySprite::talk()
 {
     Animation* anim = new Animation;
     anim->initWithSpriteFrames(this->leefyTalk, 0.35f);
     this->runAction(RepeatForever::create(Animate::create(anim)));                    
+}
+
+void LeefySprite::bump()
+{
+    Animation* anim = new Animation;
+    anim->initWithSpriteFrames(this->leefyBump, 1.0f);
+    this->runAction(Animate::create(anim));                    
 }

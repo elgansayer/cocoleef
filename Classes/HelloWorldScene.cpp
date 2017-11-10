@@ -195,7 +195,7 @@ void HelloWorld::addLeefy()
         this->addChild(_leefySprite, 4);    
         
         //test talking
-        this->_leefySprite->talk();
+        //this->_leefySprite->talk();
     }    
     
 }
@@ -244,7 +244,7 @@ void HelloWorld::checkCollisions()
         this->HUD->setScore(this->Score);
 
         //make leefy concerned
-//        this->_leefySprite->concerned();
+        this->_leefySprite->bump();
 
         //jitter the branch
         this->_leefySprite->setPositionY( this->_leefySprite->getPositionY() + 10 );

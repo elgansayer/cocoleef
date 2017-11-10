@@ -12,7 +12,9 @@ class LeefySprite : public cocos2d::Sprite
  
         //void addEvents();
         //void touchEvent(cocos2d::Touch* touch, cocos2d::Vector2 _p);
-  
+        
+        void happy();
+        void bump();
         void talk();
     private:
         void initAnims();
@@ -20,6 +22,14 @@ class LeefySprite : public cocos2d::Sprite
 
     private:
         cocos2d::Vector<cocos2d::SpriteFrame*> leefyTalk;
+
+        cocos2d::Vector<cocos2d::SpriteFrame*> leefyBump; 
+
+        cocos2d::Vector<cocos2d::SpriteFrame*> leefyConcern; 
+
+        cocos2d::Vector<cocos2d::SpriteFrame*> leefyHappy; 
+
+        cocos2d::Vector<cocos2d::SpriteFrame*> leefySkeleton; 
 };
 
 #endif // _LeefySprite_H_
