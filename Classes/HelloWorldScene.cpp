@@ -66,6 +66,9 @@ bool HelloWorld::init()
     //add leefy
     this->addLeefy();
 
+    //Add touch and click to scene
+    this->addTouch();
+    
     //schedule an update 'run update()'
     this->scheduleUpdate();
     
@@ -112,6 +115,54 @@ void HelloWorld::addLeefy()
     }    
 }
 
+/**
+    Add touch controls to scene 
+*/
+void HelloWorld::addTouch()
+{
+    auto touchListener = EventListenerTouchOneByOne::create();
+
+    touchListener->onTouchBegan = CC_CALLBACK_2(HelloWorld::onTouchBegan, this);
+    touchListener->onTouchEnded = CC_CALLBACK_2(HelloWorld::onTouchEnded, this);
+    touchListener->onTouchMoved = CC_CALLBACK_2(HelloWorld::onTouchMoved, this);
+    touchListener->onTouchCancelled = CC_CALLBACK_2(HelloWorld::onTouchCancelled, this);
+    
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);        
+}
+
+bool HelloWorld::onTouchBegan(Touch* touch, Event* event)
+{       
+    this->touchDown = true;
+    this->lastTouch = touch->getLocation();
+    
+    return true;
+}
+
+void HelloWorld::onTouchEnded(Touch* touch, Event* event)
+{
+    this->touchDown = false;
+    //todo smooth out
+    this->_leefySprite->setRotation(0); 
+}
+
+void HelloWorld::onTouchMoved(Touch* touch, Event* event)
+{
+    this->lastTouch = touch->getLocation();    
+    this->touchDown = true;
+ 
+    //not quite working right, 
+    //todo revisit
+    float angle = atan2(touch->getLocation().y - this->_leefySprite->getPosition().y, touch->getLocation().x - this->_leefySprite->getPosition().x );
+    angle = angle * (180/M_PI);   
+    //todo limit angle!
+    //cocos2d::log(" Angle: '%d'", angle);
+    this->_leefySprite->setRotation((270 + angle ));  
+}
+
+void HelloWorld::onTouchCancelled(Touch* touch, Event* event)
+{
+    this->touchDown = false;
+}
 
 /**
     Update every frame 

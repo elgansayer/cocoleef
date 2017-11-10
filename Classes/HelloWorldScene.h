@@ -22,6 +22,9 @@ public:
 private:    
     //add leefy
     void addLeefy();   
+
+    //add touch to schene
+    void addTouch();
     
     //Update each frame
     void updateLeefy(float delta);     
@@ -29,6 +32,10 @@ private:
 private:
     //pointer to the main character 
     LeefySprite * _leefySprite;
+    
+    //
+    cocos2d::Vec2 lastTouch;
+    bool touchDown;    
     
 };
 
