@@ -1,0 +1,13 @@
+* Tidy code
+* Add comenting and block comments
+* batch draw? Coins and branches
+* Score on coin touch
+* Add random-ish branches to hit
+* Don't go out of the screen view
+* Test on Android
+* Test on IOS emu?
+* Start screen
+* Fix rotation
+* Send to Chris
+* Write Song for intro? 
+* Produce app, Get Emily to comment
