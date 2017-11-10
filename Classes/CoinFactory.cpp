@@ -130,8 +130,6 @@ bool CoinFactory::checkCollisions(Node * node)
             return true;
         }
     }
-
-//this->_bullets.eraseObject(bullet);
-
+ 
     return false; 
 }

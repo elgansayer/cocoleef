@@ -533,6 +533,7 @@ CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o
  /home/elgan/mobile-interview-task/ElgGame/Classes/HUD.h
  /home/elgan/mobile-interview-task/ElgGame/Classes/HelloWorldScene.h
  /home/elgan/mobile-interview-task/ElgGame/Classes/Leefy.h
+ /home/elgan/mobile-interview-task/ElgGame/Classes/Local.h
  /usr/local/include/GLFW/glfw3.h
  /usr/local/include/GLFW/glfw3native.h
 CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o

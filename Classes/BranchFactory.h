@@ -10,7 +10,10 @@ class BranchFactory
        // ~BranchFactory();
   
         void genetateBranch();
-        void deleteOldCoins();
+        void deleteOldBranches();
+        bool checkCollisions(cocos2d::Node * node);
+    private:               
+        bool canGenetateBranch(float y);
     private:        
         cocos2d::String Branch1;
         cocos2d::String Branch2;

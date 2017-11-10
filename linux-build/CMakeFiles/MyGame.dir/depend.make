@@ -532,6 +532,7 @@ CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o: ../Classes/CoinFactory.h
 CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o: ../Classes/HUD.h
 CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o: ../Classes/HelloWorldScene.h
 CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o: ../Classes/Leefy.h
+CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o: ../Classes/Local.h
 CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o: /usr/local/include/GLFW/glfw3native.h
 

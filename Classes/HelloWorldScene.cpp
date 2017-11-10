@@ -192,7 +192,7 @@ void HelloWorld::addLeefy()
     {
 
         // add the sprite as a child to this layer
-        this->addChild(_leefySprite, 3);    
+        this->addChild(_leefySprite, 4);    
         
         //test talking
         this->_leefySprite->talk();
@@ -210,6 +210,7 @@ void HelloWorld::update(float delta)
 { 
     //generate coins test
     this->_CoinFactory->genetateCoin();
+    this->_BranchFactory->genetateBranch();
 
     this->updateHUD(delta);
     this->updateLeefy(delta);
