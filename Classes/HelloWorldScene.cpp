@@ -2,6 +2,7 @@
 #include "SimpleAudioEngine.h"
 #include "Leefy.h"
 #include "Local.h"
+#include "HUD.h"
 
 USING_NS_CC;
 
@@ -132,7 +133,11 @@ void HelloWorld::addTouch()
 
 void HelloWorld::addHUD()
 { 
+    this->HUD = HUDLayer::create();
+    this->addChild(this->HUD, 1);
 
+    //init hud to 0
+    this->HUD->setScore(0);
 }
 
 bool HelloWorld::onTouchBegan(Touch* touch, Event* event)
@@ -174,6 +179,7 @@ void HelloWorld::onTouchCancelled(Touch* touch, Event* event)
 */
 void HelloWorld::update(float delta)
 { 
+    this->updateHUD(delta);    
     this->updateLeefy(delta);
     this->updateCamera(delta);
 }
@@ -181,9 +187,12 @@ void HelloWorld::update(float delta)
 void HelloWorld::updateHUD(float delta)
 {
 
-          
+    auto camera = this->getDefaultCamera();  
+    auto position = camera->getPosition();
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+ 
+    this->HUD->setPosition(Vec2(0, position.y - (visibleSize.height / 2)));        
 } 
-
 
 //todo move to leefy class
 /**

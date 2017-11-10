@@ -50,6 +50,7 @@ private:
     //pointer to the main character 
     LeefySprite * _leefySprite;
     
+    HUDLayer * HUD;     
     //
     cocos2d::Vec2 lastTouch;
     bool touchDown;    
