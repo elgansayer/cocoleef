@@ -248,7 +248,7 @@ void HelloWorld::updateCamera(float delta)
     auto pos = camera->getPosition3D();
 //camera->setPosition3D(Vec3(pos.x, pos.y - delta * LEEFY_FALL_SPEED, pos.z));
 
-    cam era->setPositionY(camera->getPositionY() - delta * LEEFY_FALL_SPEED);    
+    camera->setPositionY(camera->getPositionY() - delta * LEEFY_FALL_SPEED);
 }
  
 

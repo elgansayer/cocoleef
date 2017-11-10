@@ -241,6 +241,87 @@ Classes/AppDelegate.cpp.s:
 	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.s
 .PHONY : Classes/AppDelegate.cpp.s
 
+Classes/BranchFactory.o: Classes/BranchFactory.cpp.o
+
+.PHONY : Classes/BranchFactory.o
+
+# target to build an object file
+Classes/BranchFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o
+.PHONY : Classes/BranchFactory.cpp.o
+
+Classes/BranchFactory.i: Classes/BranchFactory.cpp.i
+
+.PHONY : Classes/BranchFactory.i
+
+# target to preprocess a source file
+Classes/BranchFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.i
+.PHONY : Classes/BranchFactory.cpp.i
+
+Classes/BranchFactory.s: Classes/BranchFactory.cpp.s
+
+.PHONY : Classes/BranchFactory.s
+
+# target to generate assembly for a file
+Classes/BranchFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.s
+.PHONY : Classes/BranchFactory.cpp.s
+
+Classes/CoinFactory.o: Classes/CoinFactory.cpp.o
+
+.PHONY : Classes/CoinFactory.o
+
+# target to build an object file
+Classes/CoinFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o
+.PHONY : Classes/CoinFactory.cpp.o
+
+Classes/CoinFactory.i: Classes/CoinFactory.cpp.i
+
+.PHONY : Classes/CoinFactory.i
+
+# target to preprocess a source file
+Classes/CoinFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.i
+.PHONY : Classes/CoinFactory.cpp.i
+
+Classes/CoinFactory.s: Classes/CoinFactory.cpp.s
+
+.PHONY : Classes/CoinFactory.s
+
+# target to generate assembly for a file
+Classes/CoinFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.s
+.PHONY : Classes/CoinFactory.cpp.s
+
+Classes/HUD.o: Classes/HUD.cpp.o
+
+.PHONY : Classes/HUD.o
+
+# target to build an object file
+Classes/HUD.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/HUD.cpp.o
+.PHONY : Classes/HUD.cpp.o
+
+Classes/HUD.i: Classes/HUD.cpp.i
+
+.PHONY : Classes/HUD.i
+
+# target to preprocess a source file
+Classes/HUD.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/HUD.cpp.i
+.PHONY : Classes/HUD.cpp.i
+
+Classes/HUD.s: Classes/HUD.cpp.s
+
+.PHONY : Classes/HUD.s
+
+# target to generate assembly for a file
+Classes/HUD.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/HUD.cpp.s
+.PHONY : Classes/HUD.cpp.s
+
 Classes/HelloWorldScene.o: Classes/HelloWorldScene.cpp.o
 
 .PHONY : Classes/HelloWorldScene.o
@@ -267,6 +348,33 @@ Classes/HelloWorldScene.s: Classes/HelloWorldScene.cpp.s
 Classes/HelloWorldScene.cpp.s:
 	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.s
 .PHONY : Classes/HelloWorldScene.cpp.s
+
+Classes/Leefy.o: Classes/Leefy.cpp.o
+
+.PHONY : Classes/Leefy.o
+
+# target to build an object file
+Classes/Leefy.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o
+.PHONY : Classes/Leefy.cpp.o
+
+Classes/Leefy.i: Classes/Leefy.cpp.i
+
+.PHONY : Classes/Leefy.i
+
+# target to preprocess a source file
+Classes/Leefy.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/Leefy.cpp.i
+.PHONY : Classes/Leefy.cpp.i
+
+Classes/Leefy.s: Classes/Leefy.cpp.s
+
+.PHONY : Classes/Leefy.s
+
+# target to generate assembly for a file
+Classes/Leefy.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/Leefy.cpp.s
+.PHONY : Classes/Leefy.cpp.s
 
 proj.linux/main.o: proj.linux/main.cpp.o
 
@@ -314,9 +422,21 @@ help:
 	@echo "... Classes/AppDelegate.o"
 	@echo "... Classes/AppDelegate.i"
 	@echo "... Classes/AppDelegate.s"
+	@echo "... Classes/BranchFactory.o"
+	@echo "... Classes/BranchFactory.i"
+	@echo "... Classes/BranchFactory.s"
+	@echo "... Classes/CoinFactory.o"
+	@echo "... Classes/CoinFactory.i"
+	@echo "... Classes/CoinFactory.s"
+	@echo "... Classes/HUD.o"
+	@echo "... Classes/HUD.i"
+	@echo "... Classes/HUD.s"
 	@echo "... Classes/HelloWorldScene.o"
 	@echo "... Classes/HelloWorldScene.i"
 	@echo "... Classes/HelloWorldScene.s"
+	@echo "... Classes/Leefy.o"
+	@echo "... Classes/Leefy.i"
+	@echo "... Classes/Leefy.s"
 	@echo "... proj.linux/main.o"
 	@echo "... proj.linux/main.i"
 	@echo "... proj.linux/main.s"

@@ -129,11 +129,111 @@ CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o.provides: CMakeFiles/MyGame.
 CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o
 
 
+CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o: ../Classes/Leefy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elgan/mobile-interview-task/ElgGame/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o -c /home/elgan/mobile-interview-task/ElgGame/Classes/Leefy.cpp
+
+CMakeFiles/MyGame.dir/Classes/Leefy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/Leefy.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elgan/mobile-interview-task/ElgGame/Classes/Leefy.cpp > CMakeFiles/MyGame.dir/Classes/Leefy.cpp.i
+
+CMakeFiles/MyGame.dir/Classes/Leefy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/Leefy.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elgan/mobile-interview-task/ElgGame/Classes/Leefy.cpp -o CMakeFiles/MyGame.dir/Classes/Leefy.cpp.s
+
+CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o.requires:
+
+.PHONY : CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o.requires
+
+CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o.provides
+
+CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o
+
+
+CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o: ../Classes/CoinFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elgan/mobile-interview-task/ElgGame/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o -c /home/elgan/mobile-interview-task/ElgGame/Classes/CoinFactory.cpp
+
+CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elgan/mobile-interview-task/ElgGame/Classes/CoinFactory.cpp > CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.i
+
+CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elgan/mobile-interview-task/ElgGame/Classes/CoinFactory.cpp -o CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.s
+
+CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o.requires:
+
+.PHONY : CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o.requires
+
+CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o.provides
+
+CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o
+
+
+CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o: ../Classes/BranchFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elgan/mobile-interview-task/ElgGame/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o -c /home/elgan/mobile-interview-task/ElgGame/Classes/BranchFactory.cpp
+
+CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elgan/mobile-interview-task/ElgGame/Classes/BranchFactory.cpp > CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.i
+
+CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elgan/mobile-interview-task/ElgGame/Classes/BranchFactory.cpp -o CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.s
+
+CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o.requires:
+
+.PHONY : CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o.requires
+
+CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o.provides
+
+CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o
+
+
+CMakeFiles/MyGame.dir/Classes/HUD.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/HUD.cpp.o: ../Classes/HUD.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elgan/mobile-interview-task/ElgGame/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyGame.dir/Classes/HUD.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/HUD.cpp.o -c /home/elgan/mobile-interview-task/ElgGame/Classes/HUD.cpp
+
+CMakeFiles/MyGame.dir/Classes/HUD.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/HUD.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elgan/mobile-interview-task/ElgGame/Classes/HUD.cpp > CMakeFiles/MyGame.dir/Classes/HUD.cpp.i
+
+CMakeFiles/MyGame.dir/Classes/HUD.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/HUD.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elgan/mobile-interview-task/ElgGame/Classes/HUD.cpp -o CMakeFiles/MyGame.dir/Classes/HUD.cpp.s
+
+CMakeFiles/MyGame.dir/Classes/HUD.cpp.o.requires:
+
+.PHONY : CMakeFiles/MyGame.dir/Classes/HUD.cpp.o.requires
+
+CMakeFiles/MyGame.dir/Classes/HUD.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/HUD.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/HUD.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/HUD.cpp.o.provides
+
+CMakeFiles/MyGame.dir/Classes/HUD.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/HUD.cpp.o
+
+
 # Object files for target MyGame
 MyGame_OBJECTS = \
 "CMakeFiles/MyGame.dir/proj.linux/main.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o" \
-"CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o"
+"CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o" \
+"CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o" \
+"CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o" \
+"CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o" \
+"CMakeFiles/MyGame.dir/Classes/HUD.cpp.o"
 
 # External object files for target MyGame
 MyGame_EXTERNAL_OBJECTS =
@@ -141,6 +241,10 @@ MyGame_EXTERNAL_OBJECTS =
 bin/MyGame: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/HUD.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/build.make
 bin/MyGame: lib/libcocos2d.a
 bin/MyGame: lib/libcocos2dInternal.a
@@ -171,7 +275,7 @@ bin/MyGame: ../cocos2d/external/bullet/prebuilt/linux/64-bit/libLinearMath.a
 bin/MyGame: ../cocos2d/external/bullet/prebuilt/linux/64-bit/libMiniCL.a
 bin/MyGame: lib/librecast.a
 bin/MyGame: CMakeFiles/MyGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/elgan/mobile-interview-task/ElgGame/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable bin/MyGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/elgan/mobile-interview-task/ElgGame/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable bin/MyGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyGame.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/cmake -E copy_directory /home/elgan/mobile-interview-task/ElgGame/Resources /home/elgan/mobile-interview-task/ElgGame/linux-build/bin/Resources
 
@@ -183,6 +287,10 @@ CMakeFiles/MyGame.dir/build: bin/MyGame
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/HUD.cpp.o.requires
 
 .PHONY : CMakeFiles/MyGame.dir/requires
 

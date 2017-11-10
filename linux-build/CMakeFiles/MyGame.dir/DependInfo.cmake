@@ -5,7 +5,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/elgan/mobile-interview-task/ElgGame/Classes/AppDelegate.cpp" "/home/elgan/mobile-interview-task/ElgGame/linux-build/CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o"
+  "/home/elgan/mobile-interview-task/ElgGame/Classes/BranchFactory.cpp" "/home/elgan/mobile-interview-task/ElgGame/linux-build/CMakeFiles/MyGame.dir/Classes/BranchFactory.cpp.o"
+  "/home/elgan/mobile-interview-task/ElgGame/Classes/CoinFactory.cpp" "/home/elgan/mobile-interview-task/ElgGame/linux-build/CMakeFiles/MyGame.dir/Classes/CoinFactory.cpp.o"
+  "/home/elgan/mobile-interview-task/ElgGame/Classes/HUD.cpp" "/home/elgan/mobile-interview-task/ElgGame/linux-build/CMakeFiles/MyGame.dir/Classes/HUD.cpp.o"
   "/home/elgan/mobile-interview-task/ElgGame/Classes/HelloWorldScene.cpp" "/home/elgan/mobile-interview-task/ElgGame/linux-build/CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o"
+  "/home/elgan/mobile-interview-task/ElgGame/Classes/Leefy.cpp" "/home/elgan/mobile-interview-task/ElgGame/linux-build/CMakeFiles/MyGame.dir/Classes/Leefy.cpp.o"
   "/home/elgan/mobile-interview-task/ElgGame/proj.linux/main.cpp" "/home/elgan/mobile-interview-task/ElgGame/linux-build/CMakeFiles/MyGame.dir/proj.linux/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
