@@ -27,3 +27,5 @@ linux-build/bin/
 linux-build/cocos2d/
 linux-build/lib/
 bin
+
+*.log
