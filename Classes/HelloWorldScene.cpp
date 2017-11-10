@@ -226,13 +226,36 @@ void HelloWorld::update(float delta)
 
 void HelloWorld::checkCollisions()
 {
-    //if we hit something
+    //if we hit a coin
     if(this->_CoinFactory->checkCollisions(this->_leefySprite))
     {
         this->Score++;
 
         this->HUD->setScore(this->Score);
     }
+
+    //if we hit a stick/branch
+    if(this->_BranchFactory->checkCollisions(this->_leefySprite))
+    {
+        //lose 2 score
+        this->Score-=2;
+
+        //update score
+        this->HUD->setScore(this->Score);
+
+        //make leefy concerned
+//        this->_leefySprite->concerned();
+
+        //jitter the branch
+        this->_leefySprite->setPositionY( this->_leefySprite->getPositionY() + 10 );
+
+        // Create the actions to unjitter the branch
+        CCFiniteTimeAction* actionMove = 
+        CCMoveTo::create(0.5f, 
+        ccp(this->_leefySprite->getPositionX(), this->_leefySprite->getPositionY() - 10 ) );
+        this->_leefySprite->runAction( CCSequence::create(actionMove) );
+
+    }    
 }
  
 void HelloWorld::updateHUD(float delta)
