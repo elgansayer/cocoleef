@@ -11,6 +11,7 @@ class CoinFactory
         
         void deleteOldCoins();
         void genetateCoin();
+        bool checkCollisions(cocos2d::Node * node);
     private:               
         bool canGenetateCoin(float y);
     private:          

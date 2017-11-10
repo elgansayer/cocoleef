@@ -45,6 +45,9 @@ bool HelloWorld::init()
         return false;
     }
    
+    //Reset score 0
+    this->Score = 0;
+
     //preload leefy
     auto cache = SpriteFrameCache::getInstance();
     cache->addSpriteFramesWithFile("leefy.plist");
@@ -194,6 +197,7 @@ void HelloWorld::addLeefy()
         //test talking
         this->_leefySprite->talk();
     }    
+    
 }
  
 
@@ -204,16 +208,31 @@ void HelloWorld::addLeefy()
 */
 void HelloWorld::update(float delta)
 { 
+    //generate coins test
     this->_CoinFactory->genetateCoin();
 
-    //cocos2d::log(" %4.2f %4.2f",this->getPosition().x, this->getPosition().y );
- 
     this->updateHUD(delta);
     this->updateLeefy(delta);
     this->updateCamera(delta);
+
+    //check Collisions
+    this->checkCollisions();
+
+
+
+    //cocos2d::log(" %4.2f %4.2f",this->getPosition().x, this->getPosition().y ); 
 }
 
+void HelloWorld::checkCollisions()
+{
+    //if we hit something
+    if(this->_CoinFactory->checkCollisions(this->_leefySprite))
+    {
+        this->Score++;
 
+        this->HUD->setScore(this->Score);
+    }
+}
  
 void HelloWorld::updateHUD(float delta)
 {

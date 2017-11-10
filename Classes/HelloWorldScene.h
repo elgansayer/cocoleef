@@ -39,6 +39,8 @@ private:
     //add hud to schene  
     void addHUD();
 
+    void checkCollisions();
+
     //Update each function each frame
     void updateHUD(float delta);
     void updateLeefy(float delta);
@@ -53,6 +55,8 @@ private:
     
     cocos2d::Vec2 lastTouch;
     bool touchDown;
+
+    int Score;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

@@ -6,6 +6,15 @@
 * Don't go out of the screen view
 * Test on Android
 * Test on IOS emu?
+
+* refactor code, move to self updates
+
+* Animate leef when hit branch
+* Animate leef: Scared with sweap drip when...?
+* Animate leef: Talk at intro
+* Animate leef: Die on too many hits?
+* Add leef lives.
+
 * Start screen
 * Fix rotation
 * Send to Chris

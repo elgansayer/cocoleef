@@ -65,3 +65,43 @@ bool CoinFactory::canGenetateCoin(float y)
 void CoinFactory::deleteOldCoins()
 { 
 }
+
+/**
+ * checkCollisions
+ * true if CCObject collides with any coins
+ **/
+bool CoinFactory::checkCollisions(Node * node)
+{
+    auto nodeRect = CCRectMake(
+    node->getPosition().x - (node->getContentSize().width/2),
+    node->getPosition().y - (node->getContentSize().height/2),
+    node->getContentSize().width,
+    node->getContentSize().height);
+    
+  
+    //  loop through bullets
+    for (auto coinIt: this->Coins)
+    {
+        auto coinRect = CCRectMake(
+        coinIt->getPosition().x - (coinIt->getContentSize().width/2),
+        coinIt->getPosition().y - (coinIt->getContentSize().height/2),
+        coinIt->getContentSize().width,
+        coinIt->getContentSize().height);
+        
+        if (coinRect.intersectsRect(nodeRect))
+        {
+            //delete this object
+            this->Coins.eraseObject(coinIt);
+
+            //delete this sprite
+            coinIt->removeFromParentAndCleanup(true);
+
+            //return true to update score
+            return true;
+        }
+    }
+
+//this->_bullets.eraseObject(bullet);
+
+    return false; 
+}
